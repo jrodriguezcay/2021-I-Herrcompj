@@ -1,0 +1,449 @@
+desc: I1 cache:         65536 B, 64 B, 4-way associative
+desc: D1 cache:         32768 B, 64 B, 8-way associative
+desc: LL cache:         4194304 B, 64 B, 16-way associative
+cmd: ./a.out 1 4200 4200
+events: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw 
+fl=/home/live/repos/2021-I-Herrcompj/profiling/iluvatar-scientific-computing-part-01-9e1e2822cf7a/debugging/valgrind/SoftwareCarpentry-ICTP/cacheTest.cc
+fn=main
+9 5 0 0 0 0 0 3 0 0
+10 2 0 0 1 0 0 0 0 0
+14 6 1 1 2 0 0 2 0 0
+15 7 0 0 2 0 0 2 0 0
+16 7 1 1 2 0 0 2 0 0
+18 6 0 0 2 0 0 1 0 0
+20 9 1 1 2 0 0 2 0 0
+25 3 0 0 1 0 0 0 0 0
+27 21004 0 0 12602 0 0 1 0 0
+28 88216800 0 0 52928400 0 0 4200 0 0
+29 176400000 1 1 88200000 0 0 17640000 2205000 2205000
+39 1 0 0 0 0 0 0 0 0
+40 2 0 0 2 0 0 0 0 0
+fl=/tmp/glibc-2.33/csu/../sysdeps/x86_64/start.S
+fn=_start
+63 1 1 1 0 0 0 0 0 0
+79 1 0 0 0 0 0 0 0 0
+85 1 0 0 1 1 0 0 0 0
+88 1 0 0 0 0 0 0 0 0
+90 1 0 0 0 0 0 0 0 0
+93 1 0 0 0 0 0 1 0 0
+97 1 0 0 0 0 0 1 0 0
+107 1 0 0 0 0 0 0 0 0
+108 1 0 0 0 0 0 0 0 0
+110 1 0 0 0 0 0 0 0 0
+120 1 0 0 1 1 0 1 0 0
+fl=???
+fn=(below main)
+0 52 3 3 15 2 0 17 0 0
+fn=???
+0 796 94 94 245 73 20 199 16 8
+fn=_Exit
+0 6 2 2 1 1 1 0 0 0
+fn=_IO_cleanup
+0 140 12 12 42 4 4 24 0 0
+fn=_IO_default_setbuf
+0 53 4 4 9 1 1 11 0 0
+fn=_IO_default_xsputn
+0 563 4 4 149 0 0 34 0 0
+fn=_IO_do_write@@GLIBC_2.2.5
+0 65 6 6 17 0 0 13 0 0
+fn=_IO_doallocbuf
+0 25 3 3 8 1 0 4 1 0
+fn=_IO_file_doallocate
+0 56 5 5 11 2 0 6 1 0
+fn=_IO_file_overflow@@GLIBC_2.2.5
+0 1000 7 7 268 0 0 155 1 1
+fn=_IO_file_setbuf@@GLIBC_2.2.5
+0 13 2 2 3 0 0 5 0 0
+fn=_IO_file_stat
+0 2 1 1 1 0 0 0 0 0
+fn=_IO_file_sync@@GLIBC_2.2.5
+0 17 3 3 7 0 0 3 0 0
+fn=_IO_file_write@@GLIBC_2.2.5
+0 36 2 2 8 0 0 5 1 0
+fn=_IO_file_xsputn@@GLIBC_2.2.5
+0 353 8 8 71 1 0 41 1 0
+fn=_IO_flush_all_lockp
+0 104 9 9 29 12 12 18 0 0
+fn=_IO_setb
+0 26 2 2 7 0 0 6 0 0
+fn=__GI___close_nocancel
+0 30 1 1 6 0 0 0 0 0
+fn=__GI___tunable_set_val
+0 230 4 4 40 0 0 15 0 0
+fn=__GI___tunables_init
+0 34665 7 7 6648 67 67 81 2 2
+fn=____strtol_l_internal
+0 417 10 10 54 3 1 30 0 0
+fn=__acos_finite@GLIBC_2.15
+0 7 2 2 4 0 0 0 0 0
+fn=__asin_finite@GLIBC_2.15
+0 7 1 1 4 0 0 0 0 0
+fn=__atan2_finite@GLIBC_2.15
+0 8 2 2 4 0 0 0 0 0
+fn=__call_tls_dtors
+0 11 2 2 5 2 2 2 0 0
+fn=__cpu_indicator_init
+0 60 6 6 6 2 1 5 0 0
+fn=__ctype_init
+0 16 2 2 10 6 0 3 0 0
+fn=__cxa_atexit
+0 333 3 3 90 1 0 72 4 0
+fn=__cxa_finalize
+0 625 7 7 180 5 5 44 0 0
+fn=__cxa_guard_acquire
+0 20 2 2 7 1 0 3 0 0
+fn=__cxa_guard_release
+0 5 2 2 2 0 0 2 0 0
+fn=__default_morecore
+0 14 1 1 2 0 0 2 0 0
+fn=__exp_finite@GLIBC_2.15
+0 8 2 2 4 0 0 0 0 0
+fn=__init_misc
+0 24 2 2 7 0 0 5 1 0
+fn=__libc_csu_init
+0 33 2 2 8 1 0 8 0 0
+fn=__libc_early_init
+0 8 2 2 3 0 0 4 2 2
+fn=__libc_scratch_buffer_set_array_size
+0 85 2 2 25 0 0 15 0 0
+fn=__log_finite@GLIBC_2.15
+0 8 2 2 4 0 0 0 0 0
+fn=__memcpy_avx_unaligned_erms
+0 53 2 2 11 0 0 7 0 0
+fn=__mempcpy_avx_unaligned_erms
+0 12 1 1 0 0 0 0 0 0
+fn=__new_exitfn
+0 311 4 4 72 3 0 37 0 0
+fn=__open_nocancel
+0 108 2 2 6 0 0 6 1 1
+fn=__pow_finite@GLIBC_2.15
+0 7 2 2 4 0 0 0 0 0
+fn=__pread64_nocancel
+0 12 1 1 2 0 0 0 0 0
+fn=__read_nocancel
+0 25 1 1 5 0 0 0 0 0
+fn=__rtld_malloc_init_real
+0 107 4 4 12 1 1 17 1 0
+fn=__rtld_malloc_init_stubs
+0 9 2 2 1 0 0 4 0 0
+fn=__run_exit_handlers
+0 313 8 8 89 6 6 23 1 1
+fn=__sigjmp_save
+0 8 0 0 2 0 0 2 0 0
+fn=__sigsetjmp
+0 265 4 4 69 0 0 112 1 1
+fn=__strchrnul_avx2
+0 62 4 4 6 1 1 0 0 0
+fn=__strrchr_avx2
+0 27 4 4 2 1 0 0 0 0
+fn=__tunable_get_val
+0 495 2 2 100 23 9 25 0 0
+fn=__unregister_atfork
+0 64 2 2 28 2 2 4 0 0
+fn=__vfprintf_internal
+0 523 34 34 113 10 6 70 1 1
+fn=__x86_cacheinfo
+0 33 3 3 7 3 0 11 4 4
+fn=__x86_cpu_features
+0 5 0 0 2 1 0 0 0 0
+fn=_dl_add_to_namespace_list
+0 253 7 3 68 1 1 47 0 0
+fn=_dl_add_to_slotinfo
+0 54 2 2 18 3 0 12 2 0
+fn=_dl_allocate_tls_init
+0 132 6 6 41 6 0 18 1 1
+fn=_dl_allocate_tls_storage
+0 352 4 4 9 0 0 321 41 41
+fn=_dl_cache_libcmp
+0 3713 7 4 555 38 38 0 0 0
+fn=_dl_call_libc_early_init
+0 23 2 2 5 0 0 3 0 0
+fn=_dl_catch_error
+0 22 2 2 7 0 0 7 0 0
+fn=_dl_catch_exception
+0 429 3 3 91 0 0 169 3 3
+fn=_dl_check_all_versions
+0 110 2 2 19 0 0 11 0 0
+fn=_dl_check_map_versions
+0 8068 20 20 2713 83 75 766 62 55
+fn=_dl_count_modids
+0 5 1 1 3 0 0 0 0 0
+fn=_dl_debug_initialize
+0 65 3 3 22 2 1 4 0 0
+fn=_dl_debug_state
+0 2 1 1 2 0 0 0 0 0
+fn=_dl_determine_tlsoffset
+0 105 6 6 22 0 0 12 0 0
+fn=_dl_discover_osversion
+0 94 4 4 13 1 1 4 1 1
+fn=_dl_dst_count
+0 204 2 2 72 0 0 72 2 2
+fn=_dl_fini
+0 437 11 11 140 50 50 48 9 9
+fn=_dl_fixup
+0 1040 6 6 377 65 21 78 0 0
+fn=_dl_higher_prime_number
+0 157 1 1 14 4 2 0 0 0
+fn=_dl_hwcaps_contains
+0 12 1 1 3 0 0 0 0 0
+fn=_dl_hwcaps_split
+0 11 2 2 4 0 0 2 0 0
+fn=_dl_hwcaps_split_masked
+0 384 3 3 80 1 1 67 2 2
+fn=_dl_hwcaps_subdirs_active
+0 37 3 3 6 0 0 0 0 0
+fn=_dl_important_hwcaps
+0 741 35 35 129 0 0 139 5 5
+fn=_dl_init
+0 161 6 6 49 3 0 14 0 0
+fn=_dl_init_paths
+0 98 10 10 18 0 0 35 4 4
+fn=_dl_load_cache_lookup
+0 1385 21 21 319 33 33 159 3 3
+fn=_dl_lookup_direct
+0 87 5 5 31 5 2 13 0 0
+fn=_dl_lookup_symbol_x
+0 913302 11 11 151500 1853 1581 44269 16 5
+fn=_dl_map_object
+0 2274 22 22 516 0 0 319 9 9
+fn=_dl_map_object_deps
+0 2271 34 34 443 9 1 215 9 8
+fn=_dl_map_object_from_fd
+0 5939 63 59 1381 92 92 583 60 60
+fn=_dl_name_match_p
+0 3179 3 3 819 0 0 476 2 2
+fn=_dl_new_object
+0 1166 14 14 233 7 7 225 38 38
+fn=_dl_next_ld_env_entry
+0 482 2 2 166 0 0 1 0 0
+fn=_dl_next_tls_modid
+0 12 1 1 6 0 0 2 0 0
+fn=_dl_process_pt_gnu_property
+0 60 2 2 24 3 3 0 0 0
+fn=_dl_receive_error
+0 16 1 1 5 0 0 7 0 0
+fn=_dl_relocate_object
+0 363208 54 54 91131 5675 4180 27243 1673 908
+fn=_dl_runtime_resolve_xsave
+0 520 4 4 624 3 1 650 21 13
+fn=_dl_setup_hash
+0 161 2 2 49 10 10 42 1 1
+fn=_dl_sort_maps
+0 1179 12 12 307 4 4 76 3 3
+fn=_dl_start
+0 616 19 19 131 21 20 48 15 15
+fn=_dl_sysdep_read_whole_file
+0 41 3 3 6 1 1 9 2 2
+fn=_dl_sysdep_start
+0 548 18 17 151 24 22 45 5 5
+fn=_dl_sysdep_start_cleanup
+0 1 1 1 1 0 0 0 0 0
+fn=_dl_tls_static_surplus_init
+0 35 2 2 6 0 0 7 0 0
+fn=_dl_unload_cache
+0 11 2 2 3 1 0 3 0 0
+fn=_dl_x86_init_cpu_features
+0 4 2 2 1 0 0 0 0 0
+fn=_init_first
+0 18 2 2 7 4 0 4 2 1
+fn=_int_malloc
+0 553 23 23 90 2 0 96 5 2
+fn=_itoa_word
+0 134 3 3 10 1 1 8 0 0
+fn=_setjmp
+0 2 1 1 0 0 0 0 0 0
+fn=access
+0 8 1 1 1 0 0 1 0 0
+fn=atoi
+0 18 1 1 3 0 0 3 0 0
+fn=bcmp
+0 13 1 1 5 0 0 0 0 0
+fn=brk
+0 23 2 2 5 0 0 3 1 1
+fn=call_init.part.0
+0 415 3 3 127 26 0 64 0 0
+fn=check_match
+0 112994 6 6 37658 294 192 12565 5 3
+fn=check_stdfiles_vtables
+0 11 2 2 7 5 0 0 0 0
+fn=cos
+0 8 2 2 4 0 0 0 0 0
+fn=cosf
+0 8 2 2 4 0 0 0 0 0
+fn=dl_main
+0 1658 89 89 404 61 29 159 20 18
+fn=do_lookup_x
+0 551677 33 33 180391 3675 820 83300 59 42
+fn=exit
+0 5 1 1 0 0 0 1 0 0
+fn=exp2f@@GLIBC_2.27
+0 8 1 1 4 0 0 0 0 0
+fn=expand_dynamic_string_token
+0 23 2 2 6 0 0 7 0 0
+fn=expf@@GLIBC_2.27
+0 8 1 1 4 0 0 0 0 0
+fn=fstat
+0 28 2 2 0 0 0 0 0 0
+fn=fstatat
+0 49 2 2 7 0 0 0 0 0
+fn=get_common_cache_info
+0 220 13 13 22 0 0 17 0 0
+fn=get_common_indices.constprop.0
+0 58 5 5 6 0 0 21 3 3
+fn=handle_intel.constprop.0
+0 548 4 4 90 0 0 145 1 1
+fn=handle_preload_list
+0 65 5 5 15 0 0 14 2 2
+fn=index
+0 727 9 5 97 5 5 0 0 0
+fn=init_cpu_features.constprop.0
+0 305 30 30 46 1 1 94 3 3
+fn=init_tls
+0 111 6 6 26 6 1 20 1 1
+fn=intel_check_word.constprop.0
+0 5076 12 12 460 8 8 72 0 0
+fn=log2f@@GLIBC_2.27
+0 8 2 2 4 0 0 0 0 0
+fn=logf@@GLIBC_2.27
+0 8 2 2 4 0 0 0 0 0
+fn=lookup_malloc_symbol
+0 188 3 3 64 1 0 40 0 0
+fn=malloc
+0 102 6 6 29 1 0 11 0 0
+fn=malloc_hook_ini
+0 52 5 5 14 1 1 7 0 0
+fn=map_doit
+0 14 1 1 5 0 0 3 0 0
+fn=memchr
+0 11 1 1 4 0 0 0 0 0
+fn=memcpy
+0 461 4 4 131 3 2 91 20 20
+fn=memcpy@@GLIBC_2.14
+0 17 3 3 4 0 0 0 0 0
+fn=memmove
+0 34 3 3 8 1 0 0 0 0
+fn=mempcpy
+0 56 2 2 4 0 0 0 0 0
+fn=memrchr
+0 11 2 2 4 0 0 0 0 0
+fn=memset
+0 1065 8 8 25 0 0 470 107 107
+fn=mmap
+0 513 4 4 81 0 0 54 4 3
+fn=mprotect
+0 40 1 1 8 0 0 0 0 0
+fn=munmap
+0 5 1 1 1 0 0 0 0 0
+fn=open_verify.constprop.0
+0 831 16 16 200 10 10 60 0 0
+fn=open_verify.constprop.1
+0 154 8 8 33 8 8 13 2 2
+fn=openaux
+0 204 2 2 96 0 0 36 0 0
+fn=operator new(unsigned long)
+0 10 1 1 2 0 0 2 0 0
+fn=operator new[](unsigned long)
+0 1 1 1 0 0 0 0 0 0
+fn=powf@@GLIBC_2.27
+0 8 1 1 4 0 0 0 0 0
+fn=printf
+0 23 3 3 3 1 0 10 0 0
+fn=ptmalloc_init.part.0
+0 707 7 7 6 2 1 273 33 33
+fn=rawmemchr
+0 11 2 2 4 0 0 0 0 0
+fn=rindex
+0 11 1 1 4 0 0 0 0 0
+fn=rtld_calloc
+0 136 1 1 17 0 0 0 0 0
+fn=rtld_free
+0 28 1 1 14 0 0 0 0 0
+fn=rtld_lock_default_lock_recursive
+0 258 5 1 258 3 1 0 0 0
+fn=rtld_lock_default_unlock_recursive
+0 258 0 0 258 0 0 0 0 0
+fn=rtld_malloc
+0 983 4 4 198 3 1 197 1 1
+fn=sbrk
+0 61 5 5 20 2 1 10 0 0
+fn=sin
+0 8 2 2 4 0 0 0 0 0
+fn=sincosf
+0 8 1 1 4 0 0 0 0 0
+fn=sinf
+0 8 2 2 4 0 0 0 0 0
+fn=std::_V2::error_category::~error_category()
+0 3 0 0 3 0 0 0 0 0
+fn=std::error_category::error_category()
+0 8 1 1 4 1 0 2 0 0
+fn=std::error_category::~error_category()
+0 2 0 0 2 0 0 0 0 0
+fn=std::future_category()
+0 17 3 3 2 1 1 3 0 0
+fn=stpcpy
+0 10 1 1 4 0 0 0 0 0
+fn=stpncpy
+0 10 2 2 4 0 0 0 0 0
+fn=strcasecmp
+0 6 2 2 3 1 0 0 0 0
+fn=strcasecmp_l
+0 6 1 1 3 0 0 0 0 0
+fn=strcat
+0 10 3 3 4 0 0 0 0 0
+fn=strchrnul
+0 11 1 1 4 0 0 0 0 0
+fn=strcmp
+0 66359 53 53 17500 128 50 0 0 0
+fn=strcpy
+0 10 1 1 4 0 0 0 0 0
+fn=strcspn
+0 229 5 5 107 2 2 34 4 4
+fn=strdup
+0 85 1 1 15 0 0 20 0 0
+fn=strlen
+0 729 4 4 105 5 5 0 0 0
+fn=strncasecmp
+0 6 1 1 3 0 0 0 0 0
+fn=strncasecmp_l
+0 6 1 1 3 0 0 0 0 0
+fn=strncmp
+0 10 2 2 4 0 0 0 0 0
+fn=strncpy
+0 10 2 2 4 0 0 0 0 0
+fn=strnlen
+0 22 2 2 8 0 0 0 0 0
+fn=strpbrk
+0 6 1 1 3 0 0 0 0 0
+fn=strspn
+0 6 2 2 3 0 0 0 0 0
+fn=strtol
+0 12 1 1 6 1 0 0 0 0
+fn=sysmalloc
+0 211 20 20 53 4 1 33 3 3
+fn=tcache_init.part.0
+0 114 3 3 9 0 0 84 9 9
+fn=uname
+0 5 1 1 1 0 0 0 0 0
+fn=update_usable.constprop.0
+0 168 16 16 36 1 1 25 2 2
+fn=version_check_doit
+0 10 2 2 4 0 0 2 0 0
+fn=wcschr
+0 22 1 1 8 0 0 0 0 0
+fn=wcscmp
+0 11 2 2 4 0 0 0 0 0
+fn=wcscpy
+0 6 0 0 3 0 0 0 0 0
+fn=wcslen
+0 11 1 1 4 0 0 0 0 0
+fn=wcsnlen
+0 10 2 2 4 0 0 0 0 0
+fn=wmemchr
+0 22 1 1 8 0 0 0 0 0
+fn=wmemcmp
+0 13 2 2 5 0 0 0 0 0
+fn=wmemset
+0 30 2 2 8 0 0 0 0 0
+fn=write
+0 8 1 1 2 0 0 0 0 0
+summary: 266742707 1283 1263 141640851 12504 7428 17819661 2207315 2206477

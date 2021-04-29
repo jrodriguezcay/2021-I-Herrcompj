@@ -1,0 +1,1 @@
+ingrese el número de terminos de la sucesion: 
